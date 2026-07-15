@@ -11,7 +11,7 @@ Key Constraints:
 - Sequential pattern removal: I reject combinations where the five white balls form a perfect sequence, since these patterns are statistically rare.
 - Independent modeling per position: Each ball position uses its own range, sampler, and distribution, treating them as independent features rather than assuming identical behavior.
 
-## First Attempt (Apply Basic Constraints/Ranges/Historical Data)
+## 1st Attempt (Apply Basic Constraints/Ranges/Historical Data)
 This version analyzes historical Powerball draws, builds weighted samplers based on number frequency, and generates new combinations that avoid sequential patterns and any previously drawn results. After sampling, the white balls are sorted into ascending order.
 
 It acts as a weighted random generator that:
@@ -21,7 +21,7 @@ It acts as a weighted random generator that:
 
 It doesn’t predict the lottery, but it produces combinations shaped by historical data rather than pure randomness.
 
-## Second Attempt (Clustering/K-Means/Probability Modeling)
+## 2nd Attempt (Clustering/K-Means/Probability Modeling)
 This attempt uses clustering and fitted normal distributions to generate numbers that resemble historical patterns, instead of simple random ranges or weighted frequencies.
 
 - cleans the dataset
@@ -31,7 +31,7 @@ This attempt uses clustering and fitted normal distributions to generate numbers
 - clamps them to realistic ranges
 - rejects historical repeats and sequential patterns
 
-## Third Attempt (Machine Learning Clustering)
+## 3rd Attempt (Machine Learning Clustering)
 This version is doesn’t just generate combinations, it scores them using probability density, filters them by likelihood, and returns only the statistically strongest candidates.
 
 - Fits normal distributions to each ball
