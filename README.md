@@ -1,9 +1,7 @@
-# AL-ML-- The Lottery
+## AL-ML-- The Lottery
 
--- First Attempt
-
-# Second Attempt
-
-# Third Attempt
-
-# Machine Learning Clustering
+# Basic ML: Apply Basic Constraints, Ranges, Historical Combinations
+- First Attempt
+- Second Attempt
+- Third Attempt
+- Machine Learning Clustering
