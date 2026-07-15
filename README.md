@@ -1,1 +1,1 @@
-# ML/AI - The Lottey
+# AL-ML - The Lottery
