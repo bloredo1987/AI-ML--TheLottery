@@ -4,18 +4,12 @@
 In this project, I approach lottery prediction as a constrained, data‑driven sampling problem. I treat each ball position (B1–B5 and P1) as an independent variable with its own historical behavior. By analyzing positional ranges, frequency distributions, and statistical patterns, I create a structured framework that keeps predictions realistic, statistically grounded, and free from patterns that have already occurred.
 
 Key Constraints:
-- Position‑specific ranges  
-I set realistic number ranges for each ball position to keep sampling within valid, historically consistent limits.
-- Historical distribution checks  
-I analyze each position’s min, max, and mean to confirm the ranges and understand how each ball typically behaves.
-- Weighted frequency sampling  
-I bias number selection toward historically common values instead of sampling uniformly.
-- Historical combination exclusion  
-I filter out any draw that has already occurred to ensure all generated combinations are new.
-- Sequential pattern removal  
-I reject combinations where the five white balls form a perfect sequence, since these patterns are statistically rare.
-- Independent modeling per position  
-Each ball position uses its own range, sampler, and distribution, treating them as independent features rather than assuming identical behavior.
+- Position‑specific ranges: I set realistic number ranges for each ball position to keep sampling within valid, historically consistent limits.
+- Historical distribution checks: I analyze each position’s min, max, and mean to confirm the ranges and understand how each ball typically behaves.
+- Weighted frequency sampling: I bias number selection toward historically common values instead of sampling uniformly.
+- Historical combination exclusion: I filter out any draw that has already occurred to ensure all generated combinations are new.
+- Sequential pattern removal: I reject combinations where the five white balls form a perfect sequence, since these patterns are statistically rare.
+- Independent modeling per position: Each ball position uses its own range, sampler, and distribution, treating them as independent features rather than assuming identical behavior.
 
 ## First Attempt (Apply Basic Constraints/Ranges/Historical Data)
 This version analyzes historical Powerball draws, builds weighted samplers based on number frequency, and generates new combinations that avoid sequential patterns and any previously drawn results. After sampling, the white balls are sorted into ascending order.
@@ -71,11 +65,11 @@ It answers a simple question: Do certain ball positions tend to rise or fall tog
 The heatmap shows strong correlation among the white balls (B1–B5) and almost no correlation between the white balls and the Powerball (P1).
 
 This confirms that:
-- white balls behave similarly because they are sorted and share overlapping ranges
+- White balls behave similarly because they are sorted and share overlapping ranges
 - The Powerball (P1) behaves independently and must be modeled separately
 - A hybrid model should treat white balls as a group and P1 as its own distribution
 
-This is exactly what we expected. 
+This is exactly what we expected! (Phew)
 
 ## Results/Findings
 - Situation:  
