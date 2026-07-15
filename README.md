@@ -22,7 +22,51 @@ Key concept: pattern detection
 - Independent positional modeling:  
 Each ball position has its own sampler, range, and distribution. This mirrors how analysts treat independent variables in a dataset and avoids assuming all numbers behave the same.
 
-- First Attempt
-- Second Attempt
-- Third Attempt
-- Machine Learning Clustering
+## First Attempt (Apply Basic Constraints/Ranges/Historical Data)
+This first attempt eads historical lottery results, analyzes number ranges and averages, builds weighted samplers that favor numbers that appeared more often in the past, and then generates new combinations that avoid sequential patterns and avoid any combination that has already occurred historically.
+
+This script is a weighted random lottery predictor.
+It tries to generate “future‑looking” combinations by:
+- favoring historically common numbers
+- avoiding unrealistic patterns
+- avoiding exact repeats of past draws
+- forced ascending after (after sorting)
+
+It does not guarantee accuracy (lottery numbers are random), but it does produce combinations that are statistically shaped by past data.
+
+## Second Attempt (Clustering/K-Means/Probability Modeling)
+This attempt uses clustering and fitted normal distributions to generate numbers that resemble historical patterns, instead of simple random ranges or weighted frequencies.
+
+- cleans the dataset
+- clusters historical draws using K‑Means
+- fits a normal distribution to each ball position
+- samples new numbers from those fitted distributions
+- clamps them to realistic ranges
+- rejects historical repeats and sequential patterns
+
+## Third Attempt (Machine Learning Clustering)
+This version is the most complex, most “statistically engineered,” and most restrictive of all your scripts. It doesn’t just generate combinations — it scores them using probability density, filters them by likelihood, and returns only the statistically strongest candidates.
+
+- Fits normal distributions to each ball
+- Generates combinations using those distributions
+- Computes a joint likelihood score for each combination
+- Filters out combinations with likelihood < 50%
+- Removes historical repeats and sequential patterns
+- Builds a DataFrame of only “high‑likelihood” combos
+- Lets you search for specific combinations
+
+This is the first version that quantifies probability and scores each generated draw. It evaluates how “probable” a combination is under your statistical model, with a likeihood threshold >=50%.
+
+# HeatMap
+This shows:
+- Rows = numbers (1–69 for white balls, 1–26 for Powerball)
+- Columns = ball positions (B1–B5, P1)
+- Color intensity = how often that number appeared historically
+You’ll instantly see:
+- hot zones (frequent numbers)
+- cold zones (rare numbers)
+- positional biases (e.g., B1 tends to be lower numbers)
+
+![alt text](image.png)
+
+## Results/Findings
