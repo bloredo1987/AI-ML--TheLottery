@@ -1,6 +1,7 @@
-## AL-ML-- The Lottery
+# AL-ML-- The Lottery
 
-# Basic ML: Apply Basic Constraints, Ranges, Historical Combinations
+## Basic ML: Apply Basic Constraints, Ranges, Historical Combinations
+
 - First Attempt
 - Second Attempt
 - Third Attempt
