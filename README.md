@@ -1,1 +1,1 @@
-# AI-ML-Project-1
+# ML/AI - The Lottey
