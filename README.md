@@ -1,7 +1,6 @@
 # AL-ML-- The Lottery
-The is the write up
 
-# First Attempt
+-- First Attempt
 
 # Second Attempt
 
