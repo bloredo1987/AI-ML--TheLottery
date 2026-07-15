@@ -78,3 +78,11 @@ This confirms that:
 This is exactly what we expected. 
 
 ## Results/Findings
+- Situation:  
+I set out to evaluate whether historical Powerball data contained usable patterns that could support more structured, statistically grounded number generation.
+- Task:  
+Build and test multiple modeling approaches — from basic constraints to probability‑based sampling — and assess whether they produce more realistic, data‑aligned combinations.
+- Action:  
+I applied positional ranges, historical frequency weighting, clustering, normal‑distribution modeling, likelihood scoring, and pattern‑filtering. I also visualized the dataset using frequency and correlation heatmaps to validate structural relationships between ball positions.
+- Result:  
+The models consistently produced combinations that align with historical distributions while avoiding unrealistic patterns and past draws. Heatmaps confirmed strong correlation among white balls and independence of the Powerball, supporting a hybrid modeling approach. Overall, the project demonstrates that while lottery outcomes remain random, statistical constraints can generate combinations that better reflect historical behavior.
