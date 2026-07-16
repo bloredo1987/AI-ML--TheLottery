@@ -78,4 +78,4 @@ This is exactly what we expected! (Phew)
 3. I applied positional ranges, historical frequency weighting, clustering, normal‑distribution modeling, likelihood scoring, and pattern‑filtering. I also visualized the dataset using frequency and correlation heatmaps to validate structural relationships between ball positions.
 4. The models consistently produced combinations that align with historical distributions while avoiding unrealistic patterns and past draws. Heatmaps confirmed strong correlation among white balls and independence of the Powerball, supporting a hybrid modeling approach. 
 
-## Overall, the project demonstrates that while lottery outcomes remain random, statistical constraints can generate combinations that better reflect historical behavior.                   (Won $100 once, 3 white balls + Powerball. NOT FINANCIAL ADVICE)
+## Overall, the project demonstrates that while lottery outcomes remain random, statistical constraints can generate combinations that better reflect historical behavior.
