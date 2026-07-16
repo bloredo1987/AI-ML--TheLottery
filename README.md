@@ -3,7 +3,7 @@
 ## Basic ML: Apply Basic Constraints, Ranges, Historical Combinations
 In this project, I approach lottery prediction as a constrained, data‑driven sampling problem. I treat each ball position (B1–B5 and P1) as an independent variable with its own historical behavior. By analyzing positional ranges, frequency distributions, and statistical patterns, I create a structured framework that keeps predictions realistic, statistically grounded, and free from patterns that have already occurred.
 
-![alt text](image-2.png)
+/Users/brandonloredo/Desktop/Github Repo/AI-ML--TheLottery/powerball_frequency_chart2.png
 
 Key Constraints:
 - Position‑specific ranges: I set realistic number ranges for each ball position to keep sampling within valid, historically consistent limits.
